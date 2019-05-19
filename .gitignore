@@ -105,3 +105,13 @@ venv.bak/
 
 # raw files
 /data/raw/images
+
+# OS generated files
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# ide
+.vscode

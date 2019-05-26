@@ -104,7 +104,7 @@ venv.bak/
 .mypy_cache/
 
 # raw files
-/data/raw/images
+/data/raw/
 
 # OS generated files
 .DS_Store

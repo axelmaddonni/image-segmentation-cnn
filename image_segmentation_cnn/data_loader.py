@@ -21,6 +21,9 @@ def get_image_arr( path , width , height , imgNorm="divide" , odering='channels_
 	else:
 		img = cv2.imread(path, 1)
 
+	# Image resizing to be multiples of 64
+	img = img[0:height, 0:width]
+
 	if imgNorm == "sub_and_divide":
 		img = np.float32(cv2.resize(img, ( width , height ))) / 127.5 - 1
 	elif imgNorm == "sub_mean":
